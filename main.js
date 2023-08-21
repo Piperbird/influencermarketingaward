@@ -168,6 +168,7 @@ app
     });
     // async..await is not allowed in global scope, must use a wrapper
     async function main() {
+      console.log("Message sent: %s", info.messageId);
     }
     main().catch(console.error);
     response.redirect("/");
